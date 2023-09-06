@@ -7,12 +7,13 @@ import requests
 from .projects import Projects
 from .components import Components
 from .licenses import Licenses
+from .export_vulnerabilities import Vulnerabilities
 from .exceptions import AuthenticationError, DependencyTrackApiError
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-class DependencyTrack(Projects, Components, Licenses):
+class DependencyTrack(Projects, Components, Licenses, Vulnerabilities):
 
     """Main DependencyTrack API class
 

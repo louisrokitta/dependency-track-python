@@ -55,3 +55,5 @@ Using the API
 		dt.get_license('MIT')
 
 		dt.search('dnsmasq-2.0')
+
+		dt.get_vulnerabilities('<project_uuid>')
